@@ -1,7 +1,7 @@
 library(tidyverse)
 
 #Import
-timeuse <- read.csv("R/TIME_USE_24092022.csv")
+timeuse <- read.csv("R/PE_projeto/TIME_USE_24092022.csv")
 
 #Data filtering + plot
 timeuse %>% 

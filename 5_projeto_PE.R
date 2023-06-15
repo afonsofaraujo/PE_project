@@ -1,21 +1,22 @@
 # variables
-s <- 1832 
-n <- 1128
+n <- 1090
 m <- 5000
-p <- 0.45
+p <- 0.4
 # probability density function
 f <- array(NA, m)
+
 for (i in 1:1:m){
   f[i] <- (1-p)**i*p
 }
 # distribution function
 f_dist <- c(0, cumsum(f))
 
-set.seed(s)
+set.seed(1966)
 u <- runif(m)
 
 x <- array(NA, m)
 len <- 0
+
 while (TRUE){
   for(i in 1:m) {
     for(j in 1:m) {

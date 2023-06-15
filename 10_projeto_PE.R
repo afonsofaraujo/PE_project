@@ -1,10 +1,10 @@
 set.seed(1194)
-m <- 100                # number of samples
-n <- 45                 # size of samples
-h_null <- 78.1          # expected value h_null
-h_alt <- 79.1           # expected value h_alt
+m <- 25000                # number of samples
+n <- 49                 # size of samples
+h_null <- 69.9          # expected value h_null
+h_alt <- 71.4           # expected value h_alt
 sigma2 <- 4             # Variance
-alpha <- 0.1            # significance level
+alpha <- 0.08            # significance level
 # Sample generation
 samples <- matrix(rnorm(m * n, mean = h_alt, sd = sqrt(sigma2)), ncol = n)
 # Test statistics
