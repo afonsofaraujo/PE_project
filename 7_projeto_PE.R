@@ -1,12 +1,12 @@
 #Variables
-m <- 2736
+m <- 1803
 n <- 17
-prob <- 0.23
+prob <- 0.35
 #Simulation
-set.seed(1447)
+set.seed(1967)
 sim <- numeric(m)
 for (i in 1:m){
-  dist <- rnorm(17)
+  dist <- rnorm(n)
   sim[i] <- sum(dist**2)
 }
 #Quantile

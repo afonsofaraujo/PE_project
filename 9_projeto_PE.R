@@ -1,9 +1,9 @@
 library(tidyverse)
-set.seed(1309)
+set.seed(1236)
 p <- 0.2
-gama <- 0.92
+gama <- 0.98
 n <- c(30, 50, 100, 200, 300, 500, 1000)  # Number of rows
-k <- 3000                                 # Number of columns
+k <- 2500                                 # Number of columns
 # Allocation
 differenceavg <- numeric(length(n))
 root1 <- numeric(k)

@@ -1,9 +1,9 @@
-lambda <- 23.5
-n <- 4872
+lambda <- 7.5
+k <- 2961
 
 #Random Exponential Distribuition
-set.seed(4964)
-obs <- rexp(n, lambda)
+set.seed(3635)
+obs <- rexp(k, lambda)
 T <- ceiling(sum(obs))
 
 #Cumulative sum of time intervals
@@ -19,4 +19,4 @@ interval_counts <- table(cut(obs_time, breaks = seq(0, T, by = 1), include.lowes
 
 #Deviation relative to lambda
 ans <- abs(lambda-mean(interval_counts))
-print(ans)
+print(round(ans,4))
