@@ -1,14 +1,19 @@
+a <- 5
+b <- 8
+c <- 1
+d <- 20
+
 #1.
-um <- log10(1+1/1) + log10(1+1/9)
+um <- log10(1+1/a) + log10(1+1/b)
 
 #2.
-pos <-0
-for (i in 7:20) {
+pos <- 0
+for (i in c:d) {
   n_first <- as.integer(substr(2**i, 1, 1))
-  if (n_first == 1 | n_first == 9)
+  if (n_first == a | n_first == b)
     pos <- pos + 1
 }
-dois <- pos/14
+dois <- pos/(d-c+1)
 
 #3.
 ans <- abs(um-dois)

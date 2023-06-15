@@ -36,10 +36,10 @@ for (j in 1:length(n)){
     upper[i] <- xbar[i] + a*sqrt((xbar[i]*(1 - xbar[i]))/n[j])
   }
   comp2 <- upper - lower
-  differenceavg[j] <- mean(comp2 - comp1)
+  differenceavg[j] <- mean(abs(comp2 - comp1))
 }
 df <- data.frame(n, differenceavg)
 ggplot(df, aes(x = n, y = differenceavg)) +
   geom_point() +
-  theme_minimal() +
-  labs(x = "Tamanho das amostras", y = "Média das diferenças entre métodos", title = "Comparação entre os métodos 1 e 2")
+  labs(x = "Tamanho das amostras", y = "Média das diferenças entre métodos") + 
+  labs(title = "Comparação entre os métodos 1 e 2")

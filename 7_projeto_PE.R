@@ -1,9 +1,9 @@
 #Variables
-m <- 1803
+m <- 2736
 n <- 17
-prob <- 0.35
+prob <- 0.23
 #Simulation
-set.seed(1967)
+set.seed(1447)
 sim <- numeric(m)
 for (i in 1:m){
   dist <- rnorm(17)

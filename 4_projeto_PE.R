@@ -1,8 +1,8 @@
-lambda <- 7.5
-n <- 2961
+lambda <- 23.5
+n <- 4872
 
 #Random Exponential Distribuition
-set.seed(3635)
+set.seed(4964)
 obs <- rexp(n, lambda)
 T <- ceiling(sum(obs))
 
