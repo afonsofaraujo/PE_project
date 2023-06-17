@@ -14,5 +14,5 @@ exp <- as.numeric(quantile(sim, prob, type = 2))
 teo <- qchisq(prob, n)
 #Deviation
 ans <- abs(exp-teo)
-ans_r <- round(ans, digits = 4)
+ans_r <- round(ans,4)
 print(ans_r)

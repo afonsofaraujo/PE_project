@@ -1,4 +1,5 @@
 # variables
+set.seed(1966)
 n <- 1090
 m <- 5000
 p <- 0.4
@@ -11,7 +12,6 @@ for (i in 1:1:m){
 # distribution function
 f_dist <- c(0, cumsum(f))
 
-set.seed(1966)
 u <- runif(m)
 
 x <- array(NA, m)
